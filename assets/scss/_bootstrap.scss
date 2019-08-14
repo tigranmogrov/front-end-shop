@@ -1,0 +1,77 @@
+.navbar-list {
+    padding: 0 30px 0 70px;
+    font-size: 1.2rem;
+}
+
+.nav-item {
+    border-left: 1px solid $color-dark;
+    padding: 0 18.8px;
+
+    &:last-child {
+        border-right: 1px solid $color-dark;
+    }
+}
+
+.dropdown.show{
+    background: $color-dark;
+    .dropdown-toggle{
+        color: $color-light;
+    }
+}
+
+.dropdown-menu {
+    background: $color-dark;
+    border-radius: 0;
+    border: none;
+    margin-left: -1px;
+}
+
+.dropdown-item {
+    color: $color-light;
+    &:hover{
+         color: $color-dark;
+    }
+}
+
+.form-control {
+    border-radius: none;
+    border-color: transparent;
+    box-shadow: none;
+    background: none;
+
+    &:hover,
+    &:focus,
+    &:active {
+        border-radius: none;
+        border-color: transparent;
+        box-shadow: none;
+        background: none;
+    }
+
+}
+
+.carousel-inner {
+    max-height: 400px;
+}
+
+.carousel-indicators li {
+    width: 10px;
+    height: 10px;
+    margin-left: 15px;
+    background-color: transparent;
+    border: 1px solid $color-light;
+
+    &.active {
+        background: $color-light;
+    }
+}
+
+.breadcrumb-item + .breadcrumb-item::before {
+    color: rgba($color-light, 0.67);
+    content: ">";
+}
+
+.btn {
+    border-radius: 0;
+    border-color: $color-light;
+}

@@ -1,0 +1,108 @@
+.header__navbar {
+    background-color: rgba($color-light, 0.80);
+    padding: 18px 0;
+}
+
+.navbar {
+    margin-right: -15px;
+    margin-left: -15px;
+}
+.active .nav-link{
+    color: grey; 
+}
+.header__search {
+    width: 218px;
+    display: flex;
+    flex-wrap: nowrap;
+    border: 1px solid $color-dark;
+    height: 50px;
+    margin-left: 2px;
+
+    ::placeholder {
+        font-size: 1.2rem;
+    }
+
+    &-btn {
+        justify-content: center;
+        display: flex;
+        margin-left: -26px;
+        width: 38px;
+        height: 38px;
+        border-color: $color-dark;
+        background-color: $color-dark;
+        color: $color-light;
+        &:hover{
+            background-color: $color-light;
+            color: $color-dark;
+            border-color: $color-dark;
+        }
+    }
+}
+
+.header__cart-btn {
+    width: 50px;
+    height: 50px;
+    margin-left: 30px;
+    background-color: $color-light;
+    color: $color-dark;
+    position: relative;
+    &:hover{
+        background-color: $color-dark;
+        border-color: $color-dark; 
+    }
+    .fa-shopping-cart{
+        justify-content: center;
+        display: flex;
+        font-size: 1.5rem;
+    }
+    
+}
+.header__cart-counter{
+    position: absolute;
+    top: -12px;
+    left: -13px;
+    width: 24px;
+    height: 24px;
+    border-radius: 100%;
+    background-color: $color-dark;
+    color: $color-light;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.75);
+    display: none;
+}
+@media (max-width: 992px) {
+    .header-navbar {
+        padding: 0 10px;
+    }
+
+    .navbar-nav {
+        padding-left: 0;
+
+        .nav-item {
+            border-left: none;
+
+            &:last-child {
+                border-right: none;
+            }
+        }
+    }
+
+    .header__navbar-search {
+        width: calc(100% - 100px);
+        margin-right: 0;
+        display: inline-block;
+
+        search-btn {
+            margin-right: 0px;
+        }
+    }
+
+    .header__cart-btn {
+        display: inline-block !important;
+        margin-left: 30px;
+    }
+}
+
+.header-carousel {
+    background-color: rgba(21, 35, 112, 0.61);
+    border-bottom: 1px solid $color-light;
+}

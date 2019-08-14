@@ -1,0 +1,55 @@
+.aside-left {
+    background-color: rgba($color-light, 0.20);
+    padding: 15px 30px 30px;
+    border-right: 1px solid $color-light;
+
+    form {
+        .form-group {
+            margin: 0 0 16px 0;
+
+            legend {
+                font-weight: 700;
+            }
+
+            .form-check {
+                position: relative;
+                padding-left: 25px;
+                margin: 10px 0;
+
+                &.form-check input[type=checkbox] {
+                    display: none;
+                }
+            }
+
+            .form-check label:after {
+                content: '';
+                display: block;
+                height: 10px;
+                width: 10px;
+                outline: 1px solid $color-light;
+                position: absolute;
+                top: 11px;
+                left: 0;
+            }
+
+            .form-check input[type=checkbox]:checked + label:after {
+                background-color: $color-light;
+            }
+
+            .form-check-label {
+                font-size: 1.25rem;
+                margin-left: 3px;
+            }
+
+        }
+
+        .aside-more {
+            display: block;
+            color: $color-light;
+            font-size: 1.25rem;
+            margin-bottom: 30px;
+        }
+
+    }
+
+}

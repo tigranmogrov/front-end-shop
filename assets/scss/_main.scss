@@ -1,0 +1,157 @@
+.main {
+    .breadcrumb {
+        padding: 19px 0 0 0;
+        font-size: 0.875rem;
+        background: transparent;
+
+        .breadcrumb-item,
+        a {
+            color: rgba($color-light, 0.67);
+        }
+    }
+
+    &-title {
+        h1 {
+            font-size: 2.850rem;
+        }
+
+        &__select {
+            width: 100%;
+            background: $color-dark;
+            border-color: $color-light;
+            color: $color-light;
+            padding: 6px 10px 5px;
+            margin-top: 3px;
+            font-size: 1.25rem;
+        }
+    }
+}
+
+.main-content {
+    margin-top: 30px;
+
+    &__item {
+        margin-bottom: 30px;
+    }
+
+    .item-wrap {
+        outline: 1px solid #fff;
+
+        .item-image {
+            background-color: rgba($color-light, 0.8);
+            height: 180px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+
+            &__buttons {
+                position: absolute;
+                top: 5px;
+                right: 5px;
+                display: flex;
+                flex-direction: column;
+
+                .btn {
+                    width: 30px;
+                    height: 30px;
+                    margin-bottom: 5px;
+                    color: $color-dark;
+                    border-color: $color-dark;
+
+                    .fas {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                    }
+
+                    &:hover {
+                        background-color: $color-dark;
+                        color: $color-light;
+                    }
+                }
+            }
+        }
+
+        .item-title {
+            font-size: 1.75rem;
+            padding-top: 12px;
+        }
+
+        .item-description {
+            font-size: 1.25rem;
+            line-height: 1.5rem;
+        }
+
+        .item-info {
+            font-size: 1.25rem;
+            margin-top: 8px;
+
+            span {
+                line-height: 2.3rem;
+            }
+
+            strong {
+                text-transform: uppercase;
+            }
+        }
+
+        .item-price {
+            font-size: 2rem;
+            margin-top: 5px;
+        }
+    }
+}
+
+.item-btn {
+    padding: 15px;
+    .btn {
+        font-size: 1.15rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: $color-light;
+        padding: 8px 5px 10px 5px;
+        margin-bottom: 30px;
+
+        &:last-child {
+            margin-bottom: 15px;
+        }
+
+        &:hover {
+            background-color: rgba($color-light, 0.67);
+            border-color: $color-light;
+            color: $color-dark;
+        }
+    }
+}
+
+.cart-btn {
+    background-color: rgba($color-light, 0.17);
+
+    &:hover,
+    &:focus {
+        box-shadow: none !important;
+    }
+
+    &:active {
+        background-color: transparent !important;
+        color: $color-light !important;
+        border-color:  $color-light !important;
+    }
+
+    .fa-shopping-cart {
+        font-size: 1rem;
+        margin-left: 10px;
+    }
+}
+
+.main-pagination__more {
+    text-align: center;
+    display: block;
+    padding-bottom: 30px;
+
+    a {
+        color: $color-light;
+        font-size: 2rem;
+    }
+}
