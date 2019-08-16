@@ -36,9 +36,9 @@
             height: 50px;
 
             @media (max-width: 992px) {
-                width: calc(100% - 85px);
+                width: calc(100% - 85px);margin-top: 10px;
                 display: inline-block;
-
+                padding: 5px;
             }
 
             .form-control {
@@ -46,20 +46,15 @@
                 width: calc(100% - 40px);
                 margin-right: 20px;
                 box-shadow: none;
-                padding: 24px 16px;
             }
 
             .form-search {
                 padding: 5px 9px;
                 border-radius: 0;
-                margin-left: -10px;
+                margin-left: -22px;
                 background-color: $color-dark;
                 color: $color-light;
                 border-color: $color-dark;
-
-                @media (max-width: 992px) {
-                    margin-left: -15px;
-                }
 
                 &:hover {
                     color: $color-dark;
@@ -97,6 +92,7 @@
             }
 
             span {
+                display: none;
                 position: absolute;
                 padding: 0 7.7px;
                 top: -12px;
