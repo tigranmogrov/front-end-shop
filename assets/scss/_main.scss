@@ -105,6 +105,7 @@
 
 .item-btn {
     padding: 15px;
+
     .btn {
         font-size: 1.15rem;
         font-weight: 700;
@@ -112,6 +113,10 @@
         color: $color-light;
         padding: 8px 5px 10px 5px;
         margin-bottom: 30px;
+
+        @media (max-width: 991px) {
+            font-size: 0.9rem;
+        }
 
         &:last-child {
             margin-bottom: 15px;
@@ -127,6 +132,7 @@
 
 .cart-btn {
     background-color: rgba($color-light, 0.17);
+    border-color: $color-light;
 
     &:hover,
     &:focus {
@@ -136,7 +142,7 @@
     &:active {
         background-color: transparent !important;
         color: $color-light !important;
-        border-color:  $color-light !important;
+        border-color: $color-light !important;
     }
 
     .fa-shopping-cart {

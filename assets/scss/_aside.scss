@@ -3,6 +3,12 @@
     padding: 15px 30px 30px;
     border-right: 1px solid $color-light;
 
+    @media (max-width: 991px) {
+        background-color: transparent;
+        border-right: none;
+        border-top: 1px solid $color-light;
+    }
+
     form {
         .form-group {
             margin: 0 0 16px 0;

@@ -14,20 +14,22 @@
 
 <body>
     <header class="header">
-        <div class="header__navbar">
 
+        <div class="header-navbar">
             <div class="container">
-                <nav class="navbar navbar-expand-lg">
-                    <a class="navbar-brand" href="#">
-                        <img src="assets/img/icon-3.png" alt="icon">
-                    </a>
-                    
+
+                <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
+                    <a class="navbar-brand" href="#"><img src="assets/img/icon-3.png" alt=""></a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
 
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav navbar-list">
+                        <ul class="navbar-nav">
                             <li class="nav-item active">
                                 <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
                             </li>
+
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                     Products
@@ -35,34 +37,34 @@
                                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                                     <a class="dropdown-item" href="#">Lorem ipsum dolor</a>
                                     <a class="dropdown-item" href="#">Sit amet</a>
+                                    <a class="dropdown-item" href="#">Consectectur adipisicind</a>
                                     <a class="dropdown-item" href="#">Tempor incididunt</a>
-                                    <a class="dropdown-item" href="#">Dolor magna aliqua</a>
+                                    <a class="dropdown-item" href="#">Dolore magna aliqua</a>
                                     <a class="dropdown-item" href="#">Ut enim ad minim veniam</a>
-                                    <a class="dropdown-item" href="#">Quis nostrud</a>
+                                    <a class="dropdown-item" href="#">Quis nose</a>
                                 </div>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="#">Payment</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Shipping</a>
+                                <a class="nav-link " href="#" tabindex="-1" aria-disabled="true">Shipping</a>
                             </li>
                         </ul>
-                        <form class="form-inline my-2 my-lg-0 header__search">
-                            <input class="form-control mr-sm-2" type="search" placeholder="search" aria-label="Search">
-                            <button class="btn btn-outline-success header__search-btn" type="submit"><i class="fas fa-search"></i></button>
+                        <form class="form-inline my-2 my-lg-0">
+                            <input class="form-control bg-transparent mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn btn-outline-success form-search" type="submit"><i class="fas fa-search"></i></button>
                         </form>
-                        <button type="button" class="btn btn-success header__cart-btn">
-                            <i class="fas fa-shopping-cart" aria-hidden="true"></i><span id="cart-counter" class="header__cart-counter">12</span>
-                        </button>
+                        <button class="btn btn-outline-success  header-cart__btn" type="submit"><i class="fas fa-shopping-cart" aria-hidden="true"></i><span id="cart-counter" class="page-header__cart-counter">4</span></button>
+
                     </div>
                 </nav>
             </div>
         </div>
 
+
         <div class="header-carousel">
             <div class="container">
-
                 <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
                     <ol class="carousel-indicators">
                         <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -72,12 +74,16 @@
                     <div class="carousel-inner">
                         <div class="carousel-item active">
                             <img src="assets/img/slide.png" class="d-block w-100" alt="slide">
+                            <h3>Slide #1</h3>
                         </div>
                         <div class="carousel-item">
                             <img src="assets/img/slide.png" class="d-block w-100" alt="slide">
+                            <h3>Slide #2</h3>
+
                         </div>
                         <div class="carousel-item">
                             <img src="assets/img/slide.png" class="d-block w-100" alt="slide">
+                            <h3>Slide #3</h3>
                         </div>
                     </div>
                     <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -119,7 +125,7 @@
 
                 <div class="row main-content">
 
-                    <div class="main-content__item col-lg-4">
+                    <div class="main-content__item col-lg-4 col-md-4">
                         <div class="item-wrap">
                             <div class="item-image">
                                 <img src="assets/img/icon-17.png" alt="">
@@ -127,17 +133,17 @@
                                 </div>
                             </div>
                             <div class=" container-fluid">
-                                    <h2 class="item-title">#1 Device Name</h2>
-                                    <div class="item-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                    </div>
-                                    <div class="item-info">
-                                        <span class="d-block"><strong>Type:</strong> Laptop</span>
-                                        <span class="d-block"><strong>SCREEN SIZE:</strong> 7 inches</span>
-                                        <span class="d-block"><strong>RAM:</strong> 1 GB</span>
-                                        </div>
-                                        <div class="item-price text-center">
-                                            <strong>$599 <sup>25</sup></strong>
-                                        </div>
+                                <h2 class="item-title">#1 Device Name</h2>
+                                <div class="item-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                </div>
+                                <div class="item-info">
+                                    <span class="d-block"><strong>Type:</strong> Laptop</span>
+                                    <span class="d-block"><strong>SCREEN SIZE:</strong> 7 inches</span>
+                                    <span class="d-block"><strong>RAM:</strong> 1 GB</span>
+                                </div>
+                                <div class="item-price text-center">
+                                    <strong>$599 <sup>25</sup></strong>
+                                </div>
                                 <div class="item-btn">
                                     <button type="submit" class="btn btn-outline-success btn-block">More Details</button>
                                     <button type="submit" class="btn btn-outline-success btn-block cart-btn">ADD TO CART<i class="fas fa-shopping-cart" aria-hidden="true"></i></button>
@@ -146,7 +152,7 @@
                         </div>
                     </div>
 
-                    <div class="main-content__item col-lg-4">
+                    <div class="main-content__item col-lg-4 col-md-4">
                         <div class="item-wrap">
                             <div class="item-image">
                                 <img src="assets/img/icon-11.png" alt="">
@@ -154,17 +160,17 @@
                                 </div>
                             </div>
                             <div class=" container-fluid">
-                                    <h2 class="item-title">#1 Device Name</h2>
-                                    <div class="item-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                    </div>
-                                    <div class="item-info">
-                                        <span class="d-block"><strong>Type:</strong> Laptop</span>
-                                        <span class="d-block"><strong>SCREEN SIZE:</strong> 7 inches</span>
-                                        <span class="d-block"><strong>RAM:</strong> 1 GB</span>
-                                        </div>
-                                        <div class="item-price text-center">
-                                            <strong>$599 <sup>25</sup></strong>
-                                        </div>
+                                <h2 class="item-title">#1 Device Name</h2>
+                                <div class="item-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                </div>
+                                <div class="item-info">
+                                    <span class="d-block"><strong>Type:</strong> Laptop</span>
+                                    <span class="d-block"><strong>SCREEN SIZE:</strong> 7 inches</span>
+                                    <span class="d-block"><strong>RAM:</strong> 1 GB</span>
+                                </div>
+                                <div class="item-price text-center">
+                                    <strong>$599 <sup>25</sup></strong>
+                                </div>
                                 <div class="item-btn">
                                     <button type="submit" class="btn btn-outline-success btn-block">More Details</button>
                                     <button type="submit" class="btn btn-outline-success btn-block cart-btn">ADD TO CART<i class="fas fa-shopping-cart" aria-hidden="true"></i></button>
@@ -172,7 +178,7 @@
                             </div>
                         </div>
                     </div>
-                   <div class="main-content__item col-lg-4">
+                    <div class="main-content__item col-lg-4 col-md-4">
                         <div class="item-wrap">
                             <div class="item-image">
                                 <img src="assets/img/icon-13.png" alt="">
@@ -180,17 +186,17 @@
                                 </div>
                             </div>
                             <div class=" container-fluid">
-                                    <h2 class="item-title">#1 Device Name</h2>
-                                    <div class="item-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                    </div>
-                                    <div class="item-info">
-                                        <span class="d-block"><strong>Type:</strong> Laptop</span>
-                                        <span class="d-block"><strong>SCREEN SIZE:</strong> 7 inches</span>
-                                        <span class="d-block"><strong>RAM:</strong> 1 GB</span>
-                                        </div>
-                                        <div class="item-price text-center">
-                                            <strong>$599 <sup>25</sup></strong>
-                                        </div>
+                                <h2 class="item-title">#1 Device Name</h2>
+                                <div class="item-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                </div>
+                                <div class="item-info">
+                                    <span class="d-block"><strong>Type:</strong> Laptop</span>
+                                    <span class="d-block"><strong>SCREEN SIZE:</strong> 7 inches</span>
+                                    <span class="d-block"><strong>RAM:</strong> 1 GB</span>
+                                </div>
+                                <div class="item-price text-center">
+                                    <strong>$599 <sup>25</sup></strong>
+                                </div>
                                 <div class="item-btn">
                                     <button type="submit" class="btn btn-outline-success btn-block">More Details</button>
                                     <button type="submit" class="btn btn-outline-success btn-block cart-btn">ADD TO CART<i class="fas fa-shopping-cart" aria-hidden="true"></i></button>
@@ -198,7 +204,7 @@
                             </div>
                         </div>
                     </div>
-                   <div class="main-content__item col-lg-4">
+                    <div class="main-content__item col-lg-4 col-md-4">
                         <div class="item-wrap">
                             <div class="item-image">
                                 <img src="assets/img/icon-12.png" alt="">
@@ -206,17 +212,17 @@
                                 </div>
                             </div>
                             <div class=" container-fluid">
-                                    <h2 class="item-title">#1 Device Name</h2>
-                                    <div class="item-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                    </div>
-                                    <div class="item-info">
-                                        <span class="d-block"><strong>Type:</strong> Laptop</span>
-                                        <span class="d-block"><strong>SCREEN SIZE:</strong> 7 inches</span>
-                                        <span class="d-block"><strong>RAM:</strong> 1 GB</span>
-                                        </div>
-                                        <div class="item-price text-center">
-                                            <strong>$599 <sup>25</sup></strong>
-                                        </div>
+                                <h2 class="item-title">#1 Device Name</h2>
+                                <div class="item-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                </div>
+                                <div class="item-info">
+                                    <span class="d-block"><strong>Type:</strong> Laptop</span>
+                                    <span class="d-block"><strong>SCREEN SIZE:</strong> 7 inches</span>
+                                    <span class="d-block"><strong>RAM:</strong> 1 GB</span>
+                                </div>
+                                <div class="item-price text-center">
+                                    <strong>$599 <sup>25</sup></strong>
+                                </div>
                                 <div class="item-btn">
                                     <button type="submit" class="btn btn-outline-success btn-block">More Details</button>
                                     <button type="submit" class="btn btn-outline-success btn-block cart-btn">ADD TO CART<i class="fas fa-shopping-cart" aria-hidden="true"></i></button>
@@ -224,7 +230,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="main-content__item col-lg-4">
+                    <div class="main-content__item col-lg-4 col-md-4">
                         <div class="item-wrap">
                             <div class="item-image">
                                 <img src="assets/img/icon-14.png" alt="">
@@ -232,17 +238,17 @@
                                 </div>
                             </div>
                             <div class=" container-fluid">
-                                    <h2 class="item-title">#1 Device Name</h2>
-                                    <div class="item-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                    </div>
-                                    <div class="item-info">
-                                        <span class="d-block"><strong>Type:</strong> Laptop</span>
-                                        <span class="d-block"><strong>SCREEN SIZE:</strong> 7 inches</span>
-                                        <span class="d-block"><strong>RAM:</strong> 1 GB</span>
-                                        </div>
-                                        <div class="item-price text-center">
-                                            <strong>$599 <sup>25</sup></strong>
-                                        </div>
+                                <h2 class="item-title">#1 Device Name</h2>
+                                <div class="item-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                </div>
+                                <div class="item-info">
+                                    <span class="d-block"><strong>Type:</strong> Laptop</span>
+                                    <span class="d-block"><strong>SCREEN SIZE:</strong> 7 inches</span>
+                                    <span class="d-block"><strong>RAM:</strong> 1 GB</span>
+                                </div>
+                                <div class="item-price text-center">
+                                    <strong>$599 <sup>25</sup></strong>
+                                </div>
                                 <div class="item-btn">
                                     <button type="submit" class="btn btn-outline-success btn-block">More Details</button>
                                     <button type="submit" class="btn btn-outline-success btn-block cart-btn">ADD TO CART<i class="fas fa-shopping-cart" aria-hidden="true"></i></button>
@@ -251,7 +257,7 @@
                         </div>
                     </div>
 
-                    <div class="main-content__item col-lg-4">
+                    <div class="main-content__item col-lg-4 col-md-4">
                         <div class="item-wrap">
                             <div class="item-image">
                                 <img src="assets/img/icon-16.png" alt="">
@@ -259,17 +265,17 @@
                                 </div>
                             </div>
                             <div class=" container-fluid">
-                                    <h2 class="item-title">#1 Device Name</h2>
-                                    <div class="item-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                    </div>
-                                    <div class="item-info">
-                                        <span class="d-block"><strong>Type:</strong> Laptop</span>
-                                        <span class="d-block"><strong>SCREEN SIZE:</strong> 7 inches</span>
-                                        <span class="d-block"><strong>RAM:</strong> 1 GB</span>
-                                        </div>
-                                        <div class="item-price text-center">
-                                            <strong>$599 <sup>25</sup></strong>
-                                        </div>
+                                <h2 class="item-title">#1 Device Name</h2>
+                                <div class="item-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                </div>
+                                <div class="item-info">
+                                    <span class="d-block"><strong>Type:</strong> Laptop</span>
+                                    <span class="d-block"><strong>SCREEN SIZE:</strong> 7 inches</span>
+                                    <span class="d-block"><strong>RAM:</strong> 1 GB</span>
+                                </div>
+                                <div class="item-price text-center">
+                                    <strong>$599 <sup>25</sup></strong>
+                                </div>
                                 <div class="item-btn">
                                     <button type="submit" class="btn btn-outline-success btn-block">More Details</button>
                                     <button type="submit" class="btn btn-outline-success btn-block cart-btn">ADD TO CART<i class="fas fa-shopping-cart" aria-hidden="true"></i></button>
@@ -278,7 +284,7 @@
                         </div>
                     </div>
 
-                    <div class="main-content__item col-lg-4">
+                    <div class="main-content__item col-lg-4 col-md-4">
                         <div class="item-wrap">
                             <div class="item-image">
                                 <img src="assets/img/icon-10.png" alt="">
@@ -286,17 +292,17 @@
                                 </div>
                             </div>
                             <div class=" container-fluid">
-                                    <h2 class="item-title">#1 Device Name</h2>
-                                    <div class="item-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                    </div>
-                                    <div class="item-info">
-                                        <span class="d-block"><strong>Type:</strong> Laptop</span>
-                                        <span class="d-block"><strong>SCREEN SIZE:</strong> 7 inches</span>
-                                        <span class="d-block"><strong>RAM:</strong> 1 GB</span>
-                                        </div>
-                                        <div class="item-price text-center">
-                                            <strong>$599 <sup>25</sup></strong>
-                                        </div>
+                                <h2 class="item-title">#1 Device Name</h2>
+                                <div class="item-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                </div>
+                                <div class="item-info">
+                                    <span class="d-block"><strong>Type:</strong> Laptop</span>
+                                    <span class="d-block"><strong>SCREEN SIZE:</strong> 7 inches</span>
+                                    <span class="d-block"><strong>RAM:</strong> 1 GB</span>
+                                </div>
+                                <div class="item-price text-center">
+                                    <strong>$599 <sup>25</sup></strong>
+                                </div>
                                 <div class="item-btn">
                                     <button type="submit" class="btn btn-outline-success btn-block">More Details</button>
                                     <button type="submit" class="btn btn-outline-success btn-block cart-btn">ADD TO CART<i class="fas fa-shopping-cart" aria-hidden="true"></i></button>
@@ -305,7 +311,7 @@
                         </div>
                     </div>
 
-                    <div class="main-content__item col-lg-4">
+                    <div class="main-content__item col-lg-4 col-md-4">
                         <div class="item-wrap">
                             <div class="item-image">
                                 <img src="assets/img/icon-9.png" alt="">
@@ -313,17 +319,17 @@
                                 </div>
                             </div>
                             <div class=" container-fluid">
-                                    <h2 class="item-title">#1 Device Name</h2>
-                                    <div class="item-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                    </div>
-                                    <div class="item-info">
-                                        <span class="d-block"><strong>Type:</strong> Laptop</span>
-                                        <span class="d-block"><strong>SCREEN SIZE:</strong> 7 inches</span>
-                                        <span class="d-block"><strong>RAM:</strong> 1 GB</span>
-                                        </div>
-                                        <div class="item-price text-center">
-                                            <strong>$599 <sup>25</sup></strong>
-                                        </div>
+                                <h2 class="item-title">#1 Device Name</h2>
+                                <div class="item-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                </div>
+                                <div class="item-info">
+                                    <span class="d-block"><strong>Type:</strong> Laptop</span>
+                                    <span class="d-block"><strong>SCREEN SIZE:</strong> 7 inches</span>
+                                    <span class="d-block"><strong>RAM:</strong> 1 GB</span>
+                                </div>
+                                <div class="item-price text-center">
+                                    <strong>$599 <sup>25</sup></strong>
+                                </div>
                                 <div class="item-btn">
                                     <button type="submit" class="btn btn-outline-success btn-block">More Details</button>
                                     <button type="submit" class="btn btn-outline-success btn-block cart-btn">ADD TO CART<i class="fas fa-shopping-cart" aria-hidden="true"></i></button>
@@ -332,7 +338,7 @@
                         </div>
                     </div>
 
-                    <div class="main-content__item col-lg-4">
+                    <div class="main-content__item col-lg-4 col-md-4">
                         <div class="item-wrap">
                             <div class="item-image">
                                 <img src="assets/img/icon-12.png" alt="">
@@ -340,17 +346,17 @@
                                 </div>
                             </div>
                             <div class=" container-fluid">
-                                    <h2 class="item-title">#1 Device Name</h2>
-                                    <div class="item-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                    </div>
-                                    <div class="item-info">
-                                        <span class="d-block"><strong>Type:</strong> Laptop</span>
-                                        <span class="d-block"><strong>SCREEN SIZE:</strong> 7 inches</span>
-                                        <span class="d-block"><strong>RAM:</strong> 1 GB</span>
-                                        </div>
-                                        <div class="item-price text-center">
-                                            <strong>$599 <sup>25</sup></strong>
-                                        </div>
+                                <h2 class="item-title">#1 Device Name</h2>
+                                <div class="item-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                </div>
+                                <div class="item-info">
+                                    <span class="d-block"><strong>Type:</strong> Laptop</span>
+                                    <span class="d-block"><strong>SCREEN SIZE:</strong> 7 inches</span>
+                                    <span class="d-block"><strong>RAM:</strong> 1 GB</span>
+                                </div>
+                                <div class="item-price text-center">
+                                    <strong>$599 <sup>25</sup></strong>
+                                </div>
                                 <div class="item-btn">
                                     <button type="submit" class="btn btn-outline-success btn-block">More Details</button>
                                     <button type="submit" class="btn btn-outline-success btn-block cart-btn">ADD TO CART<i class="fas fa-shopping-cart" aria-hidden="true"></i></button>
@@ -465,6 +471,4 @@
     <script src="libs/popper.js/dist/umd/popper.min.js"></script>
     <script src="libs/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="assets/js/main.js"></script>
-</body>
-
-</html>
+</body></html>

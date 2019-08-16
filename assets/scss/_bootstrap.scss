@@ -1,77 +1,54 @@
-.navbar-list {
-    padding: 0 30px 0 70px;
-    font-size: 1.2rem;
+.navbar {
+    margin-right: -15px;
+    margin-left: -15px;
+    padding-top: 26px;
+    padding-bottom: 26px;
 }
 
-.nav-item {
-    border-left: 1px solid $color-dark;
-    padding: 0 18.8px;
+.navbar-light .navbar-nav .nav-link {
+    color: $color-dark;
+}
 
-    &:last-child {
-        border-right: 1px solid $color-dark;
+@media (min-width: 992px) {
+    .collapse {
+        margin-left: -25px;
     }
-}
 
-.dropdown.show{
-    background: $color-dark;
-    .dropdown-toggle{
+    .navbar-light .navbar-nav > .nav-link,
+    .navbar-light .navbar-nav .nav-link.active,
+    .navbar-light .navbar-nav .nav-link.show,
+    .navbar-light .navbar-nav .show > .nav-link {
+        background-color: $color-dark;
         color: $color-light;
     }
 }
 
-.dropdown-menu {
-    background: $color-dark;
-    border-radius: 0;
-    border: none;
-    margin-left: -1px;
-}
-
-.dropdown-item {
-    color: $color-light;
-    &:hover{
-         color: $color-dark;
+@media (min-width: 992px) {
+    .navbar-expand-lg .navbar-nav .dropdown-menu {
+        background-color: $color-dark;
+        border-radius: 0;
+        left: -1px;
     }
 }
 
-.form-control {
-    border-radius: none;
-    border-color: transparent;
-    box-shadow: none;
-    background: none;
+@media (min-width: 992px) {
+    .dropdown-item {
+        color: $color-light;
 
-    &:hover,
-    &:focus,
-    &:active {
-        border-radius: none;
-        border-color: transparent;
-        box-shadow: none;
-        background: none;
+        &:hover {
+            color: $color-dark;
+        }
     }
-
-}
-
-.carousel-inner {
-    max-height: 400px;
-}
-
-.carousel-indicators li {
-    width: 10px;
-    height: 10px;
-    margin-left: 15px;
-    background-color: transparent;
-    border: 1px solid $color-light;
-
-    &.active {
-        background: $color-light;
-    }
-}
-
-.breadcrumb-item + .breadcrumb-item::before {
-    color: rgba($color-light, 0.67);
-    content: ">";
 }
 
 .btn {
     border-radius: 0;
+}
+
+.btn-outline-success {
+    border-color: $color-light;
+}
+
+.btn-primary {
     border-color: $color-light;
 }
